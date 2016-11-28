@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Patient Info";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>Please Enter In You Medical Information</h3>
+
+<p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+<form id="frm1" action="form_action.asp">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br><br>
+    Known Medical Diagnosis 1: <input type="text" name="firstDiag"><br>
+    Known Medical Diagnosis 2: <input type="text" name="secDiag"><br>
+    Known Medical Diagnosis 3: <input type="text" name="thirdDiag"><br>
+    Known Medical Diagnosis 4: <input type="text" name="fourthDiag"><br>
+    Known Medical Diagnosis 5: <input type="text" name="fithDiag"><br><br>
+    Known Medications 1: <input type="text" name="firstMed" mg="firtMG"><br>
+    Known Medications 2: <input type="text" name="secondMed" mg="secMG"><br>
+    Known Medications 3: <input type="text" name="thirdMed" mg="thirdMG"><br>
+    Known Medications 4: <input type="text" name="fourthMed" mg="fourthMG"><br>
+    Known Medications 5: <input type="text" name="fithMed" mg="fithMG"><br><br>
+    Alergies 1: <input type="text" name="firstAl"><br>
+    Alergies 2: <input type="text" name="secAl"><br>
+    Alergies 3: <input type="text" name="thirdAl"><br><br>
+    Physical Limitations 1: <input type="text" name="firstLimit"><br>
+    Physical Limitations 2: <input type="text" name="secondLimit"><br>
+    Physical Limitations 3: <input type="text" name="thirdLimit"><br>
+
+
+        <input type="button" onclick="myFunction()" value="Submit">
+</form>
+
+<script>
+function myFunction() {
+    document.getElementById("frm1").submit();
+}
+</script>
